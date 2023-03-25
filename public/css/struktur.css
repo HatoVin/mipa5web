@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../background\ kelas.jpeg);
+    background-color: #0099ff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: auto;
+    transition: 0,5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa-solid{
+    display: none;
+}   
+
+.text-box{
+    width: 95%;
+    height: 70%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items: center;
+    transform: translate(-50%,-50%)
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.ground {
+    height: 100vh;
+    margin: 5%;
+    transition-duration: 0.5s;
+    box-shadow: none;
+}
+
+/* .card .image {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #0099ff;
+}
+
+.card .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid ;
+}
+
+.text-box .card {
+    position: relative;
+    background: #fff;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #0099ff;
+    border-radius: 20px 20px 0 0;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+} */
+
+.name {
+    color: #000000;
+}
+
+#nvbr {
+    transition-duration: 0.5s;
+}
+
+.kk {
+    padding: 8px;
+    border-radius: 5px;
+    background: #0099ff;
+}
+
+.kk .akk {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.tree,
+.tree ul,
+.tree li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.tree {
+    margin: 0 0 1em;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    transform: translate(0%, 15%);
+}
+.tree,
+.tree ul {
+    display: table;
+}
+.tree ul {
+    width: 100%;
+}
+.tree li {
+    display: table-cell;
+    padding: .5em 0;
+    vertical-align: top;
+}
+.tree li:before {
+    outline: solid 1px #666;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.tree li:first-child:before {
+    left: 50%;
+}
+.tree li:last-child:before {
+    right: 50%;
+}
+.tree code,
+.tree span {
+    border: solid .1em #000000;
+    border-radius: .2em;
+    display: inline-block;
+    margin: 0 .2em .5em;
+    padding: .2em .5em;
+    position: relative;
+}
+.tree ul:before,
+.tree code:before,
+.tree span:before {
+    outline: solid 1px #666;
+    content: "";
+    height: .5em;
+    left: 50%;
+    position: absolute;
+}
+.tree ul:before {
+    top: -.5em;
+}
+.tree code:before,
+.tree span:before {
+    top: -.55em;
+}
+.tree>li {
+    margin-top: 0;
+}
+.tree>li:before,
+.tree>li:after,
+.tree>li>code:before,
+.tree>li>span:before {
+    outline: none;
+}
+
+footer{
+    background-color: #0099ff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    height: 70px;
+    margin-top: 0;
+}
+
+.header .text-box .buttonformobile {
+    display: none;
+}
+
+.seksidll {
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+
+    .seksidll {
+        display: block;
+    }
+
+    .header .text-box .buttonformobile {
+        display: block;
+    }
+
+    .text-box {
+        width: 95%;
+    }
+
+    .tree {
+        transform: translate(0%, 0%);
+    }
+
+    .text-box .tree .seksi {
+        display: none;
+    }
+
+    .card .image {
+        height: 120px;
+        width: 120px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #0099ff;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 30px;
+        font-size: 30px;
+        cursor: pointer;
+        padding-left: 50px;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    nav .fa-solid{
+        padding-left: 10px;
+        font-size: 20px;
+        display: block;
+    }
+}
+
+.seksidll .container-fluid h2 {
+    font-weight: bold;
+}
+
+svg{
+    margin: 0 0px;
+    margin-bottom: -10px;
+}
+
